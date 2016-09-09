@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: False
+
+  tasks:
+  - name: Provision a VPC
+    ec2_vpc:
+       vpc_id: vpc-af1891cb
+       resource_tags: { "Environment":"Development" }
+       state: absent
+       region: eu-west-1
