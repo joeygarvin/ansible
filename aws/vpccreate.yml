@@ -30,7 +30,7 @@
          - subnets:
            - 172.22.1.0/24
            routes:
-            - dest: 0.0.0.0/0
-              gw: igw
+           - dest: 0.0.0.0/0
+           gw: igw
        region: eu-west-1
     register: vpc
