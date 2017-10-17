@@ -1,0 +1,5 @@
+---
+ - name: cis
+   hosts: all
+   roles:
+    - RHEL-CIS
