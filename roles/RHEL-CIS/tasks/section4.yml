@@ -64,8 +64,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis414timechange.rules
        dest: /etc/audit/rules.d/cis414timechange.rules                                    
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                                                                  
        - auditd                                                                  
        - patch                                                                   
@@ -75,8 +74,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis415permmod.rules
        dest: /etc/audit/rules.d/cis415permmod.rules              
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                                                                  
        - auditd                                                                  
        - patch                                                                   
@@ -86,8 +84,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis416network.rules 
        dest: /etc/audit/rules.d/cis416network.rules                                       
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                                                                  
        - auditd                                                                  
        - patch                                                                   
@@ -97,8 +94,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis417MAC.rules
        dest: /etc/audit/rules.d/cis417MAC.rules                 
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                   
        - auditd
        - patch                                                           
@@ -108,8 +104,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis418loginandout.rules
        dest: /etc/audit/rules.d/cis418loginandout.rules                
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                   
        - auditd
        - patch                                                           
@@ -119,8 +114,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis419sessioninit.rules
        dest: /etc/audit/rules.d/cis419sessioninit.rules                
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                   
        - auditd
        - patch                                                           
@@ -130,8 +124,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis4110disaccessconmod.rules
        dest: /etc/audit/rules.d/cis4110disaccessconmod.rules         
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                   
        - auditd
        - patch                                                           
@@ -141,8 +134,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis4111fileaccess.rules
        dest: /etc/audit/rules.d/cis4111fileaccess.rules
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                   
        - auditd
        - patch                                                           
@@ -152,8 +144,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis4112priveledged.rules
        dest: /etc/audit/rules.d/cis4112priveledged.rules
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                   
        - auditd
        - patch                                                           
@@ -163,8 +154,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis4113mounts.rules
        dest: /etc/audit/rules.d/cis4113mounts.rules
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                   
        - auditd
        - patch                                                           
@@ -174,8 +164,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis4114filedeletion.rules
        dest: /etc/audit/rules.d/cis4114filedeletion.rules
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                   
        - auditd
        - patch                                                           
@@ -185,8 +174,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis4115sudoers.rules
        dest: /etc/audit/rules.d/cis4115sudoers.rules
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                   
        - auditd
        - patch                                                           
@@ -196,8 +184,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis4116sudolog.rules
        dest: /etc/audit/rules.d/cis4116sudolog.rules
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                   
        - auditd
        - patch                                                           
@@ -207,8 +194,7 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis4117modules.rules
        dest: /etc/audit/rules.d/cis4117modules.rules
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  tags:                                                                          
        - level2                   
        - auditd
        - patch                                                           
@@ -218,8 +204,8 @@
   copy:                                                                       
        src: etc/audit/rules.d/cis4118immutable.rules
        dest: /etc/audit/rules.d/cis4118immutable.rules
-   notify: Reload auditd Rules                                                                  
-   tags:                                                                          
+  notify: Reload auditd Rules                                                                  
+  tags:                                                                          
        - level2                   
        - auditd
        - patch                                                           
