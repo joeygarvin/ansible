@@ -141,7 +141,9 @@
        - rule_4.1.11
    
 - name: "SCORED | 4.1.12 | PATCH |  Ensure use of privileged commands is collected" 
-  shell: find <partition> -xdev \( -perm -4000 -o -perm -2000 \) -type f | awk '{print "-a always,exit -F path=" $1 " -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged" }' > /etc/audit/rules.d/cis4112priveledged.rules
+  copy:                                                                       
+       src: etc/audit/rules.d/cis4112priveledged.rules
+       dest: /etc/audit/rules.d/cis4112priveledged.rules
   tags:                                                                          
        - level2                   
        - auditd
